@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basketball Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      button{
+        height: 4em;
+        margin: 10px 0;
+        font-size: 125%;
+        border: none;
+      }
+      
+      .plus-button{
+        width: 70%;
+      }
+      
+      .minus-button{
+        display: inline;
+        width: 20%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-group">
+      <button 
+        id="pointAddBtn"
+        class="plus-button"
+      >
+        Points 
+        <span id="pointDsp">
+         0 
+        </span>
+      </button>
+      <button
+        id="pointMinusBtn"
+        class="minus-button"
+      >
+        -
+      </button>
+    </div>
+    <button 
+      id="assistAddBtn"
+      class="plus-button"
+    >
+      Assists 
+      <span id="assistDsp">
+       0 
+      </span>
+    </button>
+    <button
+        id="assistMinusBtn"
+        class="minus-button"
+      >
+        -
+      </button>
+    <button 
+      id="reboundAddBtn"
+      class="plus-button"
+    >
+      Rebounds 
+      <span id="reboundDsp">
+       0 
+      </span>
+    </button>
+    <button
+        id="reboundMinusBtn"
+        class="minus-button"
+      >
+        -
+      </button>
+	<script>
+	  var pointCount = 0;
+	  var assistCount = 0;
+      var reboundCount = 0;
+      
+      document.getElementById('pointAddBtn').onclick = function changeContent() {
+        pointCount++;
+        document.getElementById('pointDsp').textContent = pointCount;
+      }
+      
+      document.getElementById('pointMinusBtn').onclick = function changeContent() {
+        pointCount--;
+        document.getElementById('pointDsp').textContent = pointCount;
+      }
+      
+      document.getElementById('assistAddBtn').onclick = function changeContent() {
+        assistCount++;
+        document.getElementById('assistDsp').textContent = assistCount;
+      }
+      
+      document.getElementById('assistMinusBtn').onclick = function changeContent() {
+        assistCount--;
+        document.getElementById('assistDsp').textContent = assistCount;
+      }
+      
+      document.getElementById('reboundAddBtn').onclick = function changeContent() {
+        reboundCount++;
+        document.getElementById('reboundDsp').textContent = reboundCount;
+      }
+      
+      document.getElementById('reboundMinusBtn').onclick = function changeContent() {
+        reboundCount--;
+        document.getElementById('reboundDsp').textContent = reboundCount;
+      }
+    </script>
+  </body>
+</html>
