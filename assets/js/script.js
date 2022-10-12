@@ -215,6 +215,7 @@ function renderPlayInput() {
 
 function renderStatCard(stat, label) {
   const cardEl = document.createElement('div');
+  cardEl.classList.add('stat-card');
   const valueEl = document.createElement('h3');
   const labelEl = document.createElement('p');
   valueEl.innerText = stat;

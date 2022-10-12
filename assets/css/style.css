@@ -72,3 +72,11 @@ option {
   width: 20%;
   background-color: red;
 }
+
+.stat-card {
+  height: 5em;
+  width: 5em;
+  margin: 5px 5px 0 0;
+  border: 1px solid lightgrey;
+  display: block;
+}
