@@ -1,0 +1,73 @@
+* {
+  font-family: sans-serif;
+}
+
+#statDisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+#statDisplay > div > p, h3 {
+  text-align: center;
+}
+
+#statDisplay > div > h3 {
+  margin-block-end: 0;
+}
+
+h6 {
+  background-color: lightgray;
+  height: 2em;
+  padding: 1em 0 0 1em;
+  margin-right: 1em;
+}
+
+button {
+  height: 5em;
+  width: 5em;
+  margin: 5px 5px 0 0;
+  font-size: 100%;
+  border: none;
+  display: block;
+  background-color: lightgray;
+  /* text-align: left; */
+}
+
+button:active {
+  background-color: gray;
+}
+
+.button-container {
+  display: flex;
+  align-items: stretch;
+  justify-items: center;
+}
+
+select {
+  height: 5em;
+  width: 5em;
+  margin: 5px 5px 0 0;
+  font-size: 100%;
+  border: none;
+  display: block;
+  background-color: lightgray;
+}
+
+option {
+  text-align: center;
+}
+
+.nav-label {
+  justify-self: baseline;
+  margin-right: 5px;
+}
+
+.plus-button{
+  width: 70%;
+}
+
+.minus-button{
+  display: inline;
+  width: 20%;
+  background-color: red;
+}
