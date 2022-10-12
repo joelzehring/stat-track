@@ -39,6 +39,7 @@ button:active {
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-items: center;
 }
